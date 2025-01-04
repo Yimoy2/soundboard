@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Soundboard</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Sound Board</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-  <div class="soundboard">
-    <button class="sound-btn" data-sound="sound1">Sound 1</button>
-    <button class="sound-btn" data-sound="sound2">Sound 2</button>
-    <button class="sound-btn" data-sound="sound3">Sound 3</button>
-    <button class="sound-btn" data-sound="sound4">Sound 4</button>
-  </div>
+<!-- partial:index.partial.html -->
+<body>
+    <audio id="applause" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/applause.mp3"></audio>
+    
+    <audio id="boo" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/boo.mp3"></audio>
 
-  <audio id="audio"></audio>
+    <audio id="gasp" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/gasp.mp3"></audio>
 
-  <script src="script.js"></script>
+    <audio id="tada" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/tada.mp3"></audio>
+
+    <audio id="victory" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/victory.mp3"></audio>
+
+    <audio id="wrong" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/wrong.mp3"></audio>
+
+    <div id="buttons"></div>
+
+    <script src="script.js"></script>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>

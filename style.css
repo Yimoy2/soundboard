@@ -1,53 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(161,100,223);
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.soundboard {
-  display: grid;
-  gap: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.btn {
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
 }
 
-/* Responsive Grid */
-@media (min-width: 768px) {
-  .soundboard {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.btn:hover {
+    opacity: 0.9;
 }
 
-@media (min-width: 1024px) {
-  .soundboard {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.sound-btn {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 15px;
-  font-size: 1rem;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  word-wrap: break-word;
-}
-
-.sound-btn:hover {
-  background-color: #0056b3;
-}
-
-.sound-btn:active {
-  background-color: #003d80;
+.btn:focus {
+    outline: none;
 }

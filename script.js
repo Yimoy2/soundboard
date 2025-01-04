@@ -1,10 +1,23 @@
-const buttons = document.querySelectorAll('.sound-btn');
-const audio = document.getElementById('audio');
+const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const sound = button.getAttribute('data-sound');
-    audio.src = `sounds/${sound}.mp3`; // Make sure your sound files are in a "sounds" folder
-    audio.play();
-  });
-});
+sounds.forEach(sound => {
+    const btn = document.createElement('button');
+    btn.classList.add('btn');
+    btn.innerText = sound;
+
+    btn.addEventListener('click', () => {
+        stopSounds();
+
+        document.getElementById(sound).play();
+    })
+
+    document.querySelector('#buttons').appendChild(btn);
+})
+
+function stopSounds() {
+    sounds.forEach(sound => {
+        const audio = document.getElementById(sound);
+        audio.pause();
+        audio.currentTime = 0;
+    })
+}
