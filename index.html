@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sound Effect Board</title>
-  <link rel="stylesheet" href="style
-    .css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Soundboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <h1>Sound Effect Board</h1>
-  <button onclick="enableSounds()">Play Sounds</button> 
-
-  <div class="container"> 
-    <button class="btn-primary" id="sound1">Sound 1</button>
-    <button class="btn-secondary" id="sound2">Sound 2</button>
-    <button class="btn-success" id="sound3">Sound 3</button>
+  <div class="soundboard">
+    <button class="sound-btn" data-sound="sound1">Sound 1</button>
+    <button class="sound-btn" data-sound="sound2">Sound 2</button>
+    <button class="sound-btn" data-sound="sound3">Sound 3</button>
+    <button class="sound-btn" data-sound="sound4">Sound 4</button>
   </div>
 
-  <script src="script.js"></script> 
+  <audio id="audio"></audio>
 
+  <script src="script.js"></script>
 </body>
 </html>
