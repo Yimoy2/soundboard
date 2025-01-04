@@ -1,28 +1,11 @@
-let currentSound = null;
-let canPlaySounds = false;
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".sound-button");
 
-const buttons = document.querySelectorAll('button');
-
-function enableSounds() {
-  canPlaySounds = true;
-}
-
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    if (canPlaySounds) {
-      const soundName = button.id.replace('sound', '');
-      playSound(soundName);
-    }
-  });
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const soundName = button.dataset.sound;
+            const audio = new Audio(`sounds/${soundName}.mp3`);
+            audio.play();
+        });
+    });
 });
-
-function playSound(soundName) {
-  if (currentSound) {
-    currentSound.pause();
-    currentSound.currentTime = 0;
-  }
-
-  const audio = new Audio('sounds/' + soundName + '.mp3');
-  audio.play();
-  currentSound = audio;
-}
