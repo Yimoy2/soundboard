@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".sound-button");
+const buttons = document.querySelectorAll('.sound-btn');
+const audio = document.getElementById('audio');
 
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            const soundName = button.dataset.sound;
-            const audio = new Audio(`sounds/${soundName}.mp3`);
-            audio.play();
-        });
-    });
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const sound = button.getAttribute('data-sound');
+    audio.src = `sounds/${sound}.mp3`; // Make sure your sound files are in a "sounds" folder
+    audio.play();
+  });
 });
