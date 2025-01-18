@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Soundboard</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
-  <div class="soundboard">
-    <button class="sound-btn" data-sound="sound1">Sound 1</button>
-    <button class="sound-btn" data-sound="sound2">Sound 2</button>
-    <button class="sound-btn" data-sound="sound3">Sound 3</button>
-    <button class="sound-btn" data-sound="sound4">Sound 4</button>
-  </div>
 
-  <audio id="audio"></audio>
+    <div id="soundboard-container">
+        <button data-sound="sound1">Sound 1</button>
+        <audio id="sound1" src="sound1.mp3"></audio>
 
-  <script src="script.js"></script>
+        <button data-sound="sound2">Sound 2</button>
+        <audio id="sound2" src="sound2.mp3"></audio>
+
+        <button data-sound="sound3">Sound 3</button>
+        <audio id="sound3" src="sound3.wav"></audio>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
