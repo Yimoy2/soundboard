@@ -125,6 +125,7 @@ main {
     background-color: var(--container-bg);
     padding: 0px 15px 15px 15px;
     border-radius: 8px;
+    /* margin-left: 10%; */
     /* box-sizing: border-box; */
     box-shadow: var(--container-shadow);
 }
