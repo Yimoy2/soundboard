@@ -32,6 +32,14 @@ const soundCategories = [
         categoryImage: "image/西翁會員貼圖-拿槍.png",
         sounds: [
             { id: "chionchan_001", name: "嗯~ o(*￣▽￣*)o 西翁降回來了 ただいま~~嗯呵呵~回來了喲~~", filePath: "./sounds/chionchan/2025.01.08 歐開哩.mp3" },
+            { id: "chionchan_002", name: "誒多，我們今天開始吧~", filePath: "./sounds/chionchan/2025.02.25 诶多我们今天开始吧.mp3" },
+            { id: "chionchan_003", name: "誒嘿嘿~ (°ଳ°)", filePath: "./sounds/chionchan/2025.02.25 欸嘿嘿（呕.mp3" },
+            { id: "chionchan_004", name: "什麽？哪有？ (´◔ω◔)", filePath: "./sounds/chionchan/2025.02.25 什么？哪有？.mp3" },
+            { id: "chionchan_005", name: "咿呀噠~~~ ٩(●′ω`●)۶", filePath: "./sounds/chionchan/2025.02.25 咿呀达.mp3" },
+            { id: "chionchan_006", name: "嗯嗯 呆膠布 我做得到的  (๑•̀ㅂ•́)و✧", filePath: "./sounds/chionchan/2025.02.25 呆膠布.mp3" },
+            { id: "chionchan_007", name: "嗯！生氣了！怒るんだよ (｡•ˇ‸ˇ•｡) ", filePath: "./sounds/chionchan/2025.02.25 生氣了.mp3" },
+            { id: "chionchan_008", name: "嗯！生氣氣！(｡•ˇε(ˇ•｡)", filePath: "./sounds/chionchan/2025.02.25 生氣氣.mp3" },
+            { id: "chionchan_009", name: "謝謝~謝謝各位小天使們~ ᜊ( •ᴗ• )ᜊ", filePath: "./sounds/chionchan/2025.02.25 謝謝小天使.mp3" },
         ],
     },
     {
@@ -74,13 +82,22 @@ const soundCategories = [
             { id: "angry_001", name: "小聲一點！", filePath: "./sounds/madao/2022.06.24 小聲一點.mp3" },
         ],
     },
-    // {
-    //     categoryName: "讓我們一起笑笑笑笑",
-    //     categoryImage: "image/c c.png",
-    //     sounds: [
-    //         { id: "lol_001", name: "小聲一點！", filePath: "./sounds/madao/2022.06.24 小聲一點.mp3" },
-    //     ],
-    // },
+    {
+        categoryName: "讓我們一起笑笑笑笑",
+        categoryImage: "image/c c.png",
+        sounds: [
+            { id: "lol_001", name: "啊哈哈哈哈", filePath: "./sounds/haha/20250323_haha_001.mp3" },
+            { id: "lol_002", name: "哼哼哼哼哈哈哈", filePath: "./sounds/haha/20250323_haha_002.mp3" },
+
+        ],
+    },
+    {
+        categoryName: "抠出一套房",
+        categoryImage: "image/西翁會員貼圖230209_凱留.png",
+        sounds: [
+            { id: "ganga_001", name: "呀咧呀咧", filePath: "./sounds/ganga/20250323_呀咧呀咧.mp3" },
+        ],
+    },
 ];
 
 // Function to generate soundboard HTML
