@@ -25,6 +25,7 @@ const soundCategories = [
             { id: "drunkweng_006", name: "(咳）靠夭哦 怎樣 嗆到了啦 இ௰இ", filePath: "./sounds/drunkweng/2024.12.29 給到.mp3" },
             { id: "drunkweng_007", name: "我最喜歡你們了", filePath: "./sounds/drunkweng/我最喜歡你們了 - 一顆蕃薯.mp3" },
             { id: "drunkweng_008", name: "嗯啊", filePath: "./sounds/drunkweng/嗯啊.mp3" },
+            { id: "drunkweng_009", name: "我愛你們", filePath: "./sounds/drunkweng/我愛你們.wav" },
         ],
     },
     {
@@ -154,6 +155,7 @@ const soundCategories = [
         categoryImage: "image/ANGRY2.png",
         sounds: [
             { id: "angry_001", name: "小聲一點！", filePath: "./sounds/madao/2022.06.24 小聲一點.mp3" },
+            { id: "angry_002", name: "NMSL！", filePath: "./sounds/madao/NMSL.mp3" },
         ],
     },
     {
