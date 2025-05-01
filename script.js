@@ -155,7 +155,7 @@ const soundCategories = [
         categoryImage: "image/ANGRY2.png",
         sounds: [
             { id: "angry_001", name: "小聲一點！", filePath: "./sounds/madao/2022.06.24 小聲一點.mp3" },
-            { id: "angry_002", name: "NMSL！", filePath: "./sounds/madao/NMSL.mp3" },
+            { id: "angry_002", name: "NMSL！", filePath: "./sounds/madao/NMSL.MP3" },
         ],
     },
     {
